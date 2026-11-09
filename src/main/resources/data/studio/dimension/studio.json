@@ -1,0 +1,16 @@
+{
+  "type": "studio:studio",
+  "generator": {
+    "type": "minecraft:flat",
+    "settings": {
+      "biome": "studio:throne_void",
+      "features": false,
+      "lakes": false,
+      "structure_overrides": [],
+      "layers": [
+        { "block": "minecraft:bedrock", "height": 1 },
+        { "block": "studio:realm_tile", "height": 2 }
+      ]
+    }
+  }
+}
