@@ -11,5 +11,4 @@ Localmente: `gradle build` (Gradle 8.5 + JDK 17); o jar fica em `build/libs/`.
 
 ## Ajustes visuais
 - Brilho geral: `ambient_light` em `data/studio/dimension_type/studio.json` (0.0 a 1.0).
-- Cor da neblina/fundo: `fog_color` em `data/studio/worldgen/biome/throne_void.json`
-  (o efeito "the_nether" multiplica a cor por 0.15, entao o valor e ~6,6x mais claro que o tom final).
+- Cor da neblina/fundo: `fog_color` em `data/studio/worldgen/biome/throne_void.json` (valor decimal da cor final, 1709604 = #1A1624).

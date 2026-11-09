@@ -3,7 +3,7 @@
   "id": "studio",
   "version": "${version}",
   "name": "Studio",
-  "description": "Pressione Ctrl+O para alternar instantaneamente para uma dimensao sombria com um trono. Pressione de novo para voltar.",
+  "description": "Pressione Ctrl+O para alternar instantaneamente para a dimensao Studio. Pressione de novo para voltar.",
   "authors": ["You"],
   "license": "MIT",
   "environment": "*",

@@ -4,6 +4,7 @@
   "package": "com.studio.mixin",
   "compatibilityLevel": "JAVA_17",
   "client": [
+    "BackgroundRendererMixin",
     "MinecraftClientMixin"
   ],
   "injectors": {

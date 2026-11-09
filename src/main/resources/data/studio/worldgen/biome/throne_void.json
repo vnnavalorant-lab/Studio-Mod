@@ -4,8 +4,8 @@
   "downfall": 0.0,
   "creature_spawn_probability": 0.0,
   "effects": {
-    "fog_color": 11835888,
-    "sky_color": 1774117,
+    "fog_color": 1709604,
+    "sky_color": 1709604,
     "water_color": 4159204,
     "water_fog_color": 329011
   },

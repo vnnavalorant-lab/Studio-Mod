@@ -22,20 +22,11 @@ public final class ModBlocks {
             .dropsNothing()
             .sounds(BlockSoundGroup.DEEPSLATE_TILES));
 
-    /** Bloco do trono. */
-    public static final Block THRONE_BLOCK = new Block(AbstractBlock.Settings.create()
-            .mapColor(MapColor.PURPLE)
-            .strength(-1.0F, 3600000.0F)
-            .dropsNothing()
-            .sounds(BlockSoundGroup.DEEPSLATE_BRICKS));
-
     public static void register() {
         add("realm_tile", REALM_TILE);
-        add("throne_block", THRONE_BLOCK);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(entries -> {
             entries.add(REALM_TILE);
-            entries.add(THRONE_BLOCK);
         });
     }
 

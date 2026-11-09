@@ -19,10 +19,10 @@ public final class RealmTeleporter {
 
     private static final Map<UUID, Integer> LAST_USE = new HashMap<>();
 
-    // Ponto de chegada padrao na dimensao (de frente para o trono, que fica ao norte)
+    // Ponto de chegada padrao na dimensao
     private static final double SPAWN_X = 0.5;
-    private static final double SPAWN_Y = ThroneBuilder.GROUND;
-    private static final double SPAWN_Z = 6.5;
+    private static final double SPAWN_Y = 3;
+    private static final double SPAWN_Z = 0.5;
 
     public static void toggle(ServerPlayerEntity player) {
         MinecraftServer server = player.getServer();
@@ -67,13 +67,12 @@ public final class RealmTeleporter {
         } else {
             // ---- ENTRAR ----
             state.setReturn(player.getUuid(), here);
-            ThroneBuilder.ensureBuilt(realm);
 
             RealmState.Loc dest = state.getRealm(player.getUuid());
             if (dest != null && dest.dim().equals(Studio.REALM_KEY.getValue().toString())) {
                 go(player, realm, dest.x(), dest.y(), dest.z(), dest.yaw(), dest.pitch());
             } else {
-                go(player, realm, SPAWN_X, SPAWN_Y, SPAWN_Z, 180f, 0f);
+                go(player, realm, SPAWN_X, SPAWN_Y, SPAWN_Z, 0f, 0f);
             }
         }
     }
